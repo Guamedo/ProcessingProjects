@@ -22,11 +22,11 @@ public class MainApp extends PApplet {
     }
 
     public void settings() {
-        size(600, 600);
+        size(600, 600, P3D);
     }
 
     public void setup(){
-        surface.setTitle("Lissajous Curves");
+        surface.setTitle("Lissajous Curves 3D");
 
         cols = width/size - 1;
         rows = height/size - 1;
@@ -34,16 +34,20 @@ public class MainApp extends PApplet {
         for(int i = 0; i < cols; i++){
             ArrayList<Curve> curveList = new ArrayList<Curve>();
             for(int j = 0; j < rows; j++){
-                Curve c = new Curve(this);
+                Curve c = new Curve(this, new PVector(2*size + i*size - size/2.0f,
+                                                        2*size + j*size - size/2.0f,
+                                                            0));
                 curveList.add(c);
             }
             curveMatrix.add(curveList);
         }
         img = loadImage("img/lissajous.jpeg");
         img.filter(DILATE);
+        ortho();
     }
 
     public void draw(){
+
         background(51);
 
         pushMatrix();
@@ -57,53 +61,70 @@ public class MainApp extends PApplet {
 
         int d = size-sep;
 
+
         for(int i = 0; i < cols; i++){
             int x = i*size + 3*size/2;
             int y = size/2;
+            int z = 0;
 
+            pushMatrix();
             stroke(255);
             strokeWeight(1);
             noFill();
-            ellipse(x, y, d, d);
+            translate(x, y, z);
+            rotateY(frameCount*0.01f);
+            sphereDetail(10);
+            sphere(d/2);
+            //ellipse(0, 0, d, d);
 
             float pointX = x + (d/2.0f)*cos(frameCount*speed*(i + 1));
             float pointY = y + (d/2.0f)*sin(frameCount*speed*(i + 1));
+            float pointZ = (d/6.0f)*cos(frameCount*speed*2*(i + 1));
             strokeWeight(6);
-            point(pointX, pointY);
+            point(pointX- x, pointY - y, pointZ - z);
 
-            strokeWeight(1);
-            stroke(255, 50);
-            line(pointX, pointY, pointX, height);
+            popMatrix();
         }
 
         for(int i = 0; i < cols; i++) {
             int x = size / 2;
             int y = i * size + 3 * size / 2;
+            int z = 0;
+
             stroke(255);
             strokeWeight(1);
             noFill();
-            ellipse(x, y, d, d);
+
+            pushMatrix();
+            translate(x, y, z);
+            rotateY(frameCount*0.01f);
+            sphereDetail(10);
+            sphere(d/2);
 
             float pointX = x + (d / 2.0f) * cos(frameCount*speed*(i + 1) + offset);
             float pointY = y + (d / 2.0f) * sin(frameCount*speed*(i + 1) + offset);
+            float pointZ = (d/6.0f)*cos(frameCount*speed*2*(i + 1));
             strokeWeight(6);
-            point(pointX, pointY);
+            point(pointX - x, pointY - y, pointZ - z);
 
-            strokeWeight(1);
-            stroke(255, 50);
-            line(pointX, pointY, width, pointY);
+            popMatrix();
+
+
         }
+
 
         for(int i = 0; i < cols; i++){
             for(int j = 0; j < rows; j++){
                 int xC = i*size + 3*size/2;
                 int yR = j * size + 3*size/2;
+                int z = 0;
 
                 float pointXc = xC + (d/2.0f)*cos(frameCount*speed*(i + 1));
                 float pointYr = yR + (d/2.0f)*sin(frameCount*speed*(j + 1) + offset);
+                float pointZ = (d/6.0f)*cos(frameCount*speed*2*(i + 1) + PI/2);
 
                 float noiseOffset = 0.015f;
-                curveMatrix.get(i).get(j).points.add(new Point(new PVector(pointXc, pointYr),
+                curveMatrix.get(i).get(j).points.add(new Point(new PVector(pointXc, pointYr, pointZ),
                                                                         color(0,
                                                                         (1-noise(frameCount*noiseOffset, 2))*255,
                                                                         noise(frameCount*noiseOffset, 3)*255)));

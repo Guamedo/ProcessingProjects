@@ -84,7 +84,7 @@ public class MainApp extends PApplet {
 
             float pointX = x + (d/3.0f)*cos(frameCount*speed*s);
             float pointY = y + (d/3.0f)*sin(frameCount*speed*s);
-            float pointZ = (d/6.0f)*cos(frameCount*speed*2*s);
+            float pointZ = 0;
             strokeWeight(6);
             stroke(color(255,
                     (noise(frameCount*noiseOffset, 2))*255,
@@ -114,7 +114,7 @@ public class MainApp extends PApplet {
 
             float pointX = x + (d / 3.0f) * cos(frameCount*speed*s + offset);
             float pointY = y + (d / 3.0f) * sin(frameCount*speed*s + offset);
-            float pointZ = (d/6.0f)*cos(frameCount*speed*2*s);
+            float pointZ = 0;
             strokeWeight(6);
             stroke(color(255,
                     (noise(frameCount*noiseOffset, 2))*255,

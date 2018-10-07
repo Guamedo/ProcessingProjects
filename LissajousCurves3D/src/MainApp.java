@@ -6,12 +6,15 @@ import java.util.ArrayList;
 
 public class MainApp extends PApplet {
 
-    private int size = 100;
+    private int size = 120;
     private int cols, rows;
 
-    private int sep = 10;
+    private int sep = size/10;
     private float offset = PI/4.0f;
     private float speed = 0.01f;
+    private float speedIncrease = 0.5f;
+
+    float noiseOffset = 0.015f;
 
     private ArrayList<ArrayList<Curve>> curveMatrix = new ArrayList<ArrayList<Curve>>();
     private PImage img;
@@ -22,7 +25,8 @@ public class MainApp extends PApplet {
     }
 
     public void settings() {
-        size(600, 600, P3D);
+        size(1200, 600, P3D);
+        //fullScreen(P3D);
     }
 
     public void setup(){
@@ -47,7 +51,7 @@ public class MainApp extends PApplet {
     }
 
     public void draw(){
-
+        ortho();
         background(51);
 
         pushMatrix();
@@ -57,11 +61,11 @@ public class MainApp extends PApplet {
         noFill();
         stroke(51);
         strokeWeight(10);
-        rect(0, 0, size, size, 10);
+        rect(1, 1, size, size, 10);
 
         int d = size-sep;
 
-
+        float s = 1.0f;
         for(int i = 0; i < cols; i++){
             int x = i*size + 3*size/2;
             int y = size/2;
@@ -73,19 +77,25 @@ public class MainApp extends PApplet {
             noFill();
             translate(x, y, z);
             rotateY(frameCount*0.01f);
+            rotateZ(frameCount*0.01f);
             sphereDetail(10);
-            sphere(d/2);
+            sphere(d/3.0f);
             //ellipse(0, 0, d, d);
 
-            float pointX = x + (d/2.0f)*cos(frameCount*speed*(i + 1));
-            float pointY = y + (d/2.0f)*sin(frameCount*speed*(i + 1));
-            float pointZ = (d/6.0f)*cos(frameCount*speed*2*(i + 1));
+            float pointX = x + (d/3.0f)*cos(frameCount*speed*s);
+            float pointY = y + (d/3.0f)*sin(frameCount*speed*s);
+            float pointZ = (d/6.0f)*cos(frameCount*speed*2*s);
             strokeWeight(6);
+            stroke(color(255,
+                    (noise(frameCount*noiseOffset, 2))*255,
+                    noise(frameCount*noiseOffset, 3)*255));
             point(pointX- x, pointY - y, pointZ - z);
 
             popMatrix();
+            s += speedIncrease;
         }
 
+        s = 1.0f;
         for(int i = 0; i < cols; i++) {
             int x = size / 2;
             int y = i * size + 3 * size / 2;
@@ -98,41 +108,45 @@ public class MainApp extends PApplet {
             pushMatrix();
             translate(x, y, z);
             rotateY(frameCount*0.01f);
+            rotateZ(frameCount*0.01f);
             sphereDetail(10);
-            sphere(d/2);
+            sphere(d/3.0f);
 
-            float pointX = x + (d / 2.0f) * cos(frameCount*speed*(i + 1) + offset);
-            float pointY = y + (d / 2.0f) * sin(frameCount*speed*(i + 1) + offset);
-            float pointZ = (d/6.0f)*cos(frameCount*speed*2*(i + 1));
+            float pointX = x + (d / 3.0f) * cos(frameCount*speed*s + offset);
+            float pointY = y + (d / 3.0f) * sin(frameCount*speed*s + offset);
+            float pointZ = (d/6.0f)*cos(frameCount*speed*2*s);
             strokeWeight(6);
+            stroke(color(255,
+                    (noise(frameCount*noiseOffset, 2))*255,
+                    noise(frameCount*noiseOffset, 3)*255));
             point(pointX - x, pointY - y, pointZ - z);
 
             popMatrix();
-
-
+            s += speedIncrease;
         }
 
-
+        float speedX = 1.0f;
         for(int i = 0; i < cols; i++){
+            float speedY = 1.0f;
             for(int j = 0; j < rows; j++){
                 int xC = i*size + 3*size/2;
                 int yR = j * size + 3*size/2;
                 int z = 0;
 
-                float pointXc = xC + (d/2.0f)*cos(frameCount*speed*(i + 1));
-                float pointYr = yR + (d/2.0f)*sin(frameCount*speed*(j + 1) + offset);
-                float pointZ = (d/6.0f)*cos(frameCount*speed*2*(i + 1) + PI/2);
+                float pointXc = xC + (d/3.0f)*cos(frameCount*speed*speedX);
+                float pointYr = yR + (d/3.0f)*sin(frameCount*speed*speedY + offset);
+                float pointZ = (d/3.0f)*cos(frameCount*speed + PI/4.0f);
 
-                float noiseOffset = 0.015f;
                 curveMatrix.get(i).get(j).points.add(new Point(new PVector(pointXc, pointYr, pointZ),
-                                                                        color(0,
-                                                                        (1-noise(frameCount*noiseOffset, 2))*255,
+                                                                        color(255,
+                                                                        (noise(frameCount*noiseOffset, 2))*255,
                                                                         noise(frameCount*noiseOffset, 3)*255)));
-                if(frameCount*speed > 2*PI - PI/6){
+                if(frameCount*speed > 4*PI){
                     curveMatrix.get(i).get(j).points.remove(0);
                 }
-
+                speedY += speedIncrease;
             }
+            speedX += speedIncrease;
         }
 
         for(int i = 0; i < cols; i++){

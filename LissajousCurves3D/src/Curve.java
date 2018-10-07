@@ -17,20 +17,39 @@ class Curve {
     }
 
     void draw(){
+        this.parent.pushMatrix();
+        this.parent.translate(this.center.x, this.center.y, this.center.z);
+        this.parent.rotateY(this.parent.frameCount*0.01f);
+        this.parent.rotateZ(this.parent.frameCount*0.01f);
         for(int i = 0; i < this.points.size()-1; i++){
-            this.parent.strokeWeight(2);
+            this.parent.strokeWeight(3);
             this.parent.stroke(this.points.get(i).col);
-            this.parent.pushMatrix();
-            this.parent.translate(this.center.x, this.center.y, this.center.z);
-            this.parent.rotateY(this.parent.frameCount*0.01f);
             this.parent.line(this.points.get(i).pos.x  - this.center.x,
-                                    this.points.get(i).pos.y  - this.center.y,
-                                    this.points.get(i).pos.z  - this.center.z,
+                                this.points.get(i).pos.y  - this.center.y,
+                                this.points.get(i).pos.z  - this.center.z,
                                 this.points.get(i + 1).pos.x - this.center.x,
                                 this.points.get(i + 1).pos.y - this.center.y,
                                 this.points.get(i+1).pos.z - this.center.z);
-            this.parent.popMatrix();
+    }
+        if(this.points.size() > 0){
+            this.parent.strokeWeight(6);
+            this.parent.point(0, 0, 0);
+            this.parent.strokeWeight(1);
+            this.parent.line(0,
+                                0,
+                                0,
+                                this.points.get(this.points.size() - 1).pos.x  - this.center.x,
+                                this.points.get(this.points.size() - 1).pos.y  - this.center.y,
+                                this.points.get(this.points.size() - 1).pos.z  - this.center.z);
+
+            this.parent.translate(this.points.get(this.points.size() - 1).pos.x  - this.center.x,
+                                    this.points.get(this.points.size() - 1).pos.y  - this.center.y,
+                                    this.points.get(this.points.size() - 1).pos.z  - this.center.z);
+            this.parent.strokeWeight(6);
+            this.parent.point(0, 0, 0);
         }
+
+        this.parent.popMatrix();
 
         // Center debugging
         /*

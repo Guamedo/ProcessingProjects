@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d270898-ae51-4783-9fbb-e63c9608d667" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/img/SCR_47384.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/img/lissajous.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/Curve.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/MainApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/Point.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/src/Curve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/src/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves3D/src/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LissajousCurves/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,6 +95,7 @@
     <session id="-842191289">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.opened" value="2" />
@@ -119,12 +103,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="528" />
+          <entry key="java" value="535" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="528" />
+          <entry key="JAVA" value="535" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -148,13 +132,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="135">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#384#402#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#632#633#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -269,12 +253,12 @@
       <workItem from="1538847315407" duration="159000" />
       <workItem from="1538861203388" duration="600000" />
       <workItem from="1538862024176" duration="1942000" />
-      <workItem from="1538901677833" duration="1543000" />
+      <workItem from="1538901677833" duration="1555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18287000" />
+    <option name="totallyTimeSpent" value="18299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -289,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32789558" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32789558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,13 +320,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="135">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#384#402#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
           </folding>
         </state>
       </provider>

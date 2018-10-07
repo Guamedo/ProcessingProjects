@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d270898-ae51-4783-9fbb-e63c9608d667" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LissajousCurves/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LissajousCurves.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/SCR_47384.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/lissajous.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LissajousCurves/Curve.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LissajousCurves/MainApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LissajousCurves/Point.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Curve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/out/production/LissajousCurves/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/src/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Curve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,12 +136,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1009" />
+          <entry key="java" value="1759" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1009" />
+          <entry key="JAVA" value="1759" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -180,8 +165,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="226">
+              <caret line="142" column="50" selection-start-line="142" selection-start-column="50" selection-end-line="142" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Curve.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,18 +191,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Curve.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -272,7 +257,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538910253212" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538919918610" />
     <property name="last_opened_file_path" value="$USER_HOME$/JavaLibs/processing-3.4/core/library/gluegen-rt.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -325,12 +310,12 @@
       <workItem from="1538861203388" duration="600000" />
       <workItem from="1538862024176" duration="1942000" />
       <workItem from="1538901677833" duration="914000" />
-      <workItem from="1538905228614" duration="5016000" />
+      <workItem from="1538905228614" duration="12661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22674000" />
+    <option name="totallyTimeSpent" value="30319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -373,6 +358,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Curve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -380,20 +375,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Curve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="226">
+          <caret line="142" column="50" selection-start-line="142" selection-start-column="50" selection-end-line="142" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

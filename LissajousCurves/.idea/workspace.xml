@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d270898-ae51-4783-9fbb-e63c9608d667" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/libraries/core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lemniscate/emptyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/emptyProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lemniscate/out/production/emptyProject/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/out/production/emptyProject/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LissajousCurves.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LissajousCurves/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/gluegen_rt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/jogl_all.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/img/SCR_47384.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/img/red_panda.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/MainApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/src/MainApp.java" afterDir="false" />
     </list>
@@ -129,16 +145,49 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="-873530935">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="480" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="480" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="33" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="232">
+              <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#385#403#0" expanded="true" />
                 <element signature="e#602#603#0" expanded="true" />
                 <element signature="e#632#633#0" expanded="true" />
               </folding>
@@ -185,8 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,20 +241,27 @@
               <item name="LissajousCurves" type="b2602c69:ProjectViewProjectNode" />
               <item name="LissajousCurves" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LissajousCurves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LissajousCurves" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538841438599" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lemniscate" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
@@ -257,16 +311,18 @@
       <workItem from="1538862024176" duration="1942000" />
       <workItem from="1538901677833" duration="1555000" />
       <workItem from="1538921520844" duration="210000" />
+      <workItem from="1538931057960" duration="2261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18509000" />
+    <option name="totallyTimeSpent" value="20770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980047" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -275,7 +331,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32789558" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32614556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,7 +340,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32789558" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32614556" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -312,7 +370,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Curve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="111">
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -322,10 +380,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="232">
+          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#385#403#0" expanded="true" />
             <element signature="e#602#603#0" expanded="true" />
             <element signature="e#632#633#0" expanded="true" />
           </folding>
@@ -372,6 +431,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>R Skeletons</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -383,7 +443,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>9.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -395,7 +455,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>HelloProcessingWorld</last-edited>
+          <last-edited>LissajousCurves</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

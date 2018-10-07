@@ -45,7 +45,7 @@ public class MainApp extends PApplet {
             }
             curveMatrix.add(curveList);
         }
-        img = loadImage("img/lissajous.jpeg");
+        img = loadImage("img/red_panda.jpg");
         img.filter(DILATE);
         ortho();
     }
@@ -55,13 +55,8 @@ public class MainApp extends PApplet {
         background(51);
 
         pushMatrix();
-        image(img,0.0f, 0.0f, (float)size, (float)size);
+        image(img,sep/2, sep/2, (float)size-sep, (float)size-sep);
         popMatrix();
-
-        noFill();
-        stroke(51);
-        strokeWeight(10);
-        rect(1, 1, size, size, 10);
 
         int d = size-sep;
 
@@ -152,11 +147,6 @@ public class MainApp extends PApplet {
         for(int i = 0; i < cols; i++){
             for(int j = 0; j < rows; j++){
                 curveMatrix.get(i).get(j).draw();
-                /*for(Point p: curveMatrix.get(i).get(j).points){
-                    strokeWeight(3);
-                    stroke(p.color.x, p.color.y, p.color.z);
-                    point(p.pos.x, p.pos.y);
-                }*/
             }
         }
     }

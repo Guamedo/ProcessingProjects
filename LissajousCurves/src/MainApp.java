@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 public class MainApp extends PApplet {
 
-    private int size = 100;
+    private int size = 120;
     private int cols, rows;
 
     private int sep = 10;
-    private float offset = PI/4.0f;
+    private float offset = 0;
     private float speed = 0.01f;
 
     private ArrayList<ArrayList<Curve>> curveMatrix = new ArrayList<ArrayList<Curve>>();
@@ -57,6 +57,9 @@ public class MainApp extends PApplet {
 
         int d = size-sep;
 
+        float a = size/3.0f - sep/3.0f;
+        float angle = frameCount*speed;
+
         for(int i = 0; i < cols; i++){
             int x = i*size + 3*size/2;
             int y = size/2;
@@ -64,10 +67,15 @@ public class MainApp extends PApplet {
             stroke(255);
             strokeWeight(1);
             noFill();
-            ellipse(x, y, d, d);
+            //ellipse(x, y, d, d);
+            drawLemniscate(x, y, a);
 
-            float pointX = x + (d/2.0f)*cos(frameCount*speed*(i + 1));
-            float pointY = y + (d/2.0f)*sin(frameCount*speed*(i + 1));
+            //float pointX = x + (d/2.0f)*cos(angle*(i + 1));
+            //float pointY = y + (d/2.0f)*sin(angle*(i + 1));
+
+            float pointX = x + (a*sqrt(2)*cos(angle*(i + 1)))/(pow(sin(angle*(i+1)), 2.0f) + 1);
+            float pointY = y + (a*sqrt(2)*cos(angle*(i + 1))*sin(angle*(i + 1)))/(pow(sin(angle*(i + 1)), 2.0f) + 1);
+
             strokeWeight(6);
             point(pointX, pointY);
 
@@ -82,10 +90,12 @@ public class MainApp extends PApplet {
             stroke(255);
             strokeWeight(1);
             noFill();
-            ellipse(x, y, d, d);
+            //ellipse(x, y, d, d);
+            drawLemniscate(x, y, a);
 
-            float pointX = x + (d / 2.0f) * cos(frameCount*speed*(i + 1) + offset);
-            float pointY = y + (d / 2.0f) * sin(frameCount*speed*(i + 1) + offset);
+            float pointX = x + (a*sqrt(2)*cos(angle*(i + 1) + offset))/(pow(sin(angle*(i+1) + offset), 2.0f) + 1);
+            float pointY = y + (a*sqrt(2)*cos(angle*(i + 1) + offset)*sin(angle*(i + 1) + offset))/(pow(sin(angle*(i + 1) + offset), 2.0f) + 1);
+
             strokeWeight(6);
             point(pointX, pointY);
 
@@ -96,18 +106,18 @@ public class MainApp extends PApplet {
 
         for(int i = 0; i < cols; i++){
             for(int j = 0; j < rows; j++){
-                int xC = i*size + 3*size/2;
-                int yR = j * size + 3*size/2;
+                int x = i*size + 3*size/2;
+                int y = j * size + 3*size/2;
 
-                float pointXc = xC + (d/2.0f)*cos(frameCount*speed*(i + 1));
-                float pointYr = yR + (d/2.0f)*sin(frameCount*speed*(j + 1) + offset);
+                float pointX = x + (a*sqrt(2)*cos(angle*(i + 1)))/(pow(sin(angle*(i+1)), 2.0f) + 1);
+                float pointY = y + (a*sqrt(2)*cos(angle*(j + 1) + offset)*sin(angle*(j + 1) + offset))/(pow(sin(angle*(j + 1) + offset), 2.0f) + 1);
 
-                float noiseOffset = 0.015f;
-                curveMatrix.get(i).get(j).points.add(new Point(new PVector(pointXc, pointYr),
-                                                                        color(0,
+                float noiseOffset = 0.008f;
+                curveMatrix.get(i).get(j).points.add(new Point(new PVector(pointX, pointY),
+                                                                        color(200,
                                                                         (1-noise(frameCount*noiseOffset, 2))*255,
                                                                         noise(frameCount*noiseOffset, 3)*255)));
-                if(frameCount*speed > 2*PI - PI/6){
+                if(frameCount*speed > 2*PI){
                     curveMatrix.get(i).get(j).points.remove(0);
                 }
 
@@ -117,12 +127,18 @@ public class MainApp extends PApplet {
         for(int i = 0; i < cols; i++){
             for(int j = 0; j < rows; j++){
                 curveMatrix.get(i).get(j).draw();
-                /*for(Point p: curveMatrix.get(i).get(j).points){
-                    strokeWeight(3);
-                    stroke(p.color.x, p.color.y, p.color.z);
-                    point(p.pos.x, p.pos.y);
-                }*/
             }
         }
+    }
+
+    public void drawLemniscate(float x, float y, float a){
+        beginShape();
+        for(int i = 0; i < 101; i++){
+            float angle = (i/100.0f)*2.0f*PI;
+            float pointX = x + (a*sqrt(2)*cos(angle))/(pow(sin(angle), 2.0f) + 1);
+            float pointY = y + (a*sqrt(2)*cos(angle)*sin(angle))/(pow(sin(angle), 2.0f) + 1);
+            vertex(pointX, pointY);
+        }
+        endShape();
     }
 }

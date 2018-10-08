@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bf29840-e2f1-4d3c-96c5-a768dc4ffe94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emptyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/emptyProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/emptyProject/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/emptyProject/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/.idea/libraries/core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/LissajousCurves.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/out/production/LissajousCurves/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/src/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/gluegen_rt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/jogl_all.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/img/SCR_47384.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/img/red_panda.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/Curve.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/Curve.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/src/Curve.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/src/Curve.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/src/MainApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -89,9 +80,26 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1319" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1319" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.file.types.open" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -99,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+            <state relative-caret-position="306">
+              <caret line="92" column="83" selection-start-line="92" selection-start-column="83" selection-end-line="92" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,8 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,16 +163,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538932812955" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539015949380" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/JavaLibs/processing-3.3.6/sound/library/sound.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -210,17 +218,19 @@
       <workItem from="1538921791593" duration="2777000" />
       <workItem from="1538930260955" duration="149000" />
       <workItem from="1538931848645" duration="1062000" />
+      <workItem from="1539010575491" duration="4024000" />
+      <workItem from="1539014799288" duration="1097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4340000" />
+    <option name="totallyTimeSpent" value="9461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26028278" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2667095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -229,7 +239,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -261,8 +271,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+        <state relative-caret-position="306">
+          <caret line="92" column="83" selection-start-line="92" selection-start-column="83" selection-end-line="92" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -335,7 +345,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>core</last-edited>
+          <last-edited>sound</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

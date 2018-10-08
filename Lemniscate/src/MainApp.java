@@ -1,5 +1,6 @@
 import processing.core.PApplet;
 import processing.core.PVector;
+import processing.core.PImage;
 
 import java.util.ArrayList;
 
@@ -7,6 +8,9 @@ public class MainApp extends PApplet{
 
     private float a;
     private ArrayList<PVector> points = new ArrayList<PVector>();
+    private PImage img;
+    private PImage mask;
+    private PVector imgPos = new PVector(0, 0);
 
     public static void main(String[] args){
         String[] appletArgs = new String[] { "MainApp" };
@@ -20,10 +24,24 @@ public class MainApp extends PApplet{
     public void setup(){
         background(51);
         a = width/3.0f;
+
+        // Load the nyan cat image
+        img  = loadImage("img/nyan.png");
+        img.loadPixels();
+
+        // Generate a mask to remove borders
+        mask = img.copy();
+        mask.filter(GRAY);
+        mask.filter(THRESHOLD, 0.95f);
+        mask.filter(INVERT);
+
+        // Apply the mask to the image
+        img.mask(mask);
     }
 
     public void draw(){
         background(51);
+
         translate(width/2.0f, height/2.0f);
 
         float t = frameCount*0.02f;
@@ -62,6 +80,22 @@ public class MainApp extends PApplet{
 
         ellipse(F1.x, F1.y, 10, 10);
         text("F1",F1.x+5, F1.y-5);
+
+        imgPos = lastPoint;
+        pushMatrix();
+        imageMode(CENTER);
+        //scale(-1, 1);
+        //translate(-width/2.0f, -height/2.0f);
+        translate(imgPos.x, imgPos.y);
+        float angle = 0;
+        if(points.size() >= 2){
+            angle = atan2(points.get(points.size()-1).y - points.get(points.size()-2).y,
+                    points.get(points.size()-1).x - points.get(points.size()-2).x);
+        }
+        rotate(angle);
+        translate(-imgPos.x, -imgPos.y);
+        image(img, imgPos.x, imgPos.y, 40, 30);
+        popMatrix();
 
     }
 

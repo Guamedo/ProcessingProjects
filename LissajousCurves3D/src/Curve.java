@@ -30,9 +30,10 @@ class Curve {
                                 this.points.get(i + 1).pos.x - this.center.x,
                                 this.points.get(i + 1).pos.y - this.center.y,
                                 this.points.get(i+1).pos.z - this.center.z);
-    }
+        }
+
         if(this.points.size() > 0){
-            this.parent.strokeWeight(6);
+            /*this.parent.strokeWeight(6);
             this.parent.point(0, 0, 0);
             this.parent.strokeWeight(1);
             this.parent.line(0,
@@ -40,34 +41,15 @@ class Curve {
                                 0,
                                 this.points.get(this.points.size() - 1).pos.x  - this.center.x,
                                 this.points.get(this.points.size() - 1).pos.y  - this.center.y,
-                                this.points.get(this.points.size() - 1).pos.z  - this.center.z);
+                                this.points.get(this.points.size() - 1).pos.z  - this.center.z);*/
 
             this.parent.translate(this.points.get(this.points.size() - 1).pos.x  - this.center.x,
                                     this.points.get(this.points.size() - 1).pos.y  - this.center.y,
                                     this.points.get(this.points.size() - 1).pos.z  - this.center.z);
-            this.parent.strokeWeight(6);
+            this.parent.strokeWeight(8);
             this.parent.point(0, 0, 0);
         }
-
         this.parent.popMatrix();
-
-        // Center debugging
-        /*
-        this.parent.strokeWeight(5);
-        this.parent.stroke(255);
-        this.parent.point(center.x, center.y, center.z);
-        this.parent.strokeWeight(1);
-        this.parent.stroke(50, 50, 200, 100);
-        if(this.points.size() > 0){
-            this.parent.line(center.x,
-                                center.y,
-                                center.z,
-                                this.points.get(this.points.size() - 1).pos.x,
-                                this.points.get(this.points.size() - 1).pos.y,
-                                this.points.get(this.points.size() - 1).pos.z);
-        }
-        */
-
     }
 
     @Override

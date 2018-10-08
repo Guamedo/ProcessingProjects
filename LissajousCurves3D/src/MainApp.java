@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class MainApp extends PApplet {
 
-    private int size = 120;
+    private int size = 200;
     private int cols, rows;
 
     private int sep = size/10;
@@ -20,12 +20,11 @@ public class MainApp extends PApplet {
     private PImage img;
 
     public static void main(String[] args){
-        String[] appletArgs = new String[] { "MainApp" };
-        PApplet.main(appletArgs);
+        PApplet.main("MainApp", args);
     }
 
     public void settings() {
-        size(1200, 600, P3D);
+        size(1200, 850, P3D);
         //fullScreen(P3D);
     }
 

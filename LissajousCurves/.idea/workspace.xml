@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d270898-ae51-4783-9fbb-e63c9608d667" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/emptyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/emptyProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/out/production/emptyProject/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/out/production/emptyProject/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LissajousCurves.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LissajousCurves/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/gluegen_rt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/jogl_all.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/img/SCR_47384.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/img/red_panda.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/out/production/LissajousCurves/MainApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/src/MainApp.java" afterDir="false" />
     </list>
@@ -148,18 +132,19 @@
     <session id="-873530935">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="480" />
+          <entry key="java" value="502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="480" />
+          <entry key="JAVA" value="502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -183,8 +168,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+            <state relative-caret-position="224">
+              <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#385#403#0" expanded="true" />
@@ -223,8 +208,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="103" />
-    <option name="y" value="27" />
+    <option name="x" value="135" />
+    <option name="y" value="49" />
     <option name="width" value="1161" />
     <option name="height" value="636" />
   </component>
@@ -311,12 +296,12 @@
       <workItem from="1538862024176" duration="1942000" />
       <workItem from="1538901677833" duration="1555000" />
       <workItem from="1538921520844" duration="210000" />
-      <workItem from="1538931057960" duration="2261000" />
+      <workItem from="1538931057960" duration="3842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20770000" />
+    <option name="totallyTimeSpent" value="22351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -331,7 +316,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32614556" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32614556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        <state relative-caret-position="224">
+          <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#385#403#0" expanded="true" />

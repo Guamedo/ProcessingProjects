@@ -6,11 +6,20 @@ import java.util.ArrayList;
 
 public class MainApp extends PApplet{
 
+    private final int RED = color(255, 0, 0);
+    private final int ORANGE = color(255, 165, 0);
+    private final int YELLOW = color(255, 255, 0);
+    private final int GREEN = color(0, 255, 0);
+    private final int BLUE = color(0, 0, 255);
+    private final int INDIGO = color(75, 0, 130);
+    private final int VIOLET = color(238, 130, 238);
+    private final int colorNumber = 7;
+
     private float a;
-    private ArrayList<PVector> points = new ArrayList<PVector>();
+    private ArrayList<ArrayList<Point>> points = new ArrayList<ArrayList<Point>>();
     private PImage img;
-    private PImage mask;
     private PVector imgPos = new PVector(0, 0);
+    private int rainbow[];
 
     public static void main(String[] args){
         String[] appletArgs = new String[] { "MainApp" };
@@ -18,11 +27,25 @@ public class MainApp extends PApplet{
     }
 
     public void settings(){
-        size(600, 600);
+        size(900, 600);
     }
 
     public void setup(){
         background(51);
+
+        rainbow = new int[colorNumber];
+        rainbow[0] = RED;
+        rainbow[1] = ORANGE;
+        rainbow[2] = YELLOW;
+        rainbow[3] = GREEN;
+        rainbow[4] = BLUE;
+        rainbow[5] = INDIGO;
+        rainbow[6] = VIOLET;
+
+        for(int i = 0; i < colorNumber; i++){
+            points.add(new ArrayList<Point>());
+        }
+
         a = width/3.0f;
 
         // Load the nyan cat image
@@ -30,7 +53,7 @@ public class MainApp extends PApplet{
         img.loadPixels();
 
         // Generate a mask to remove borders
-        mask = img.copy();
+        PImage mask = img.copy();
         mask.filter(GRAY);
         mask.filter(THRESHOLD, 0.95f);
         mask.filter(INVERT);
@@ -44,25 +67,30 @@ public class MainApp extends PApplet{
 
         translate(width/2.0f, height/2.0f);
 
-        float t = frameCount*0.02f;
 
-        float x = (a*sqrt(2)*cos(t))/(pow(sin(t), 2.0f) + 1);
-        float y = (a*sqrt(2)*cos(t)*sin(t))/(pow(sin(t), 2.0f) + 1);
+        float t = frameCount*0.01f;
 
-        points.add(new PVector(x, y));
-        if(t > 2*PI){
-            points.remove(0);
-        }
+        for(int j = 0; j < colorNumber; j++) {
 
-        stroke(200, (1-noise(t)*255), noise(t)*255);
-        strokeWeight(3);
-        for(int i = 0; i < points.size()-1; i++){
-            line(points.get(i).x, points.get(i).y, points.get(i+1).x, points.get(i+1).y);
+            float offset = (j-3)*2.0f;
+            float x = ((a+offset) * sqrt(2) * cos(t + PI/2)) / (pow(sin(t + PI/2), 2.0f) + 1);
+            float y = ((a+offset) * sqrt(2) * cos(t + PI/2) * sin(t + PI/2)) / (pow(sin(t + PI/2), 2.0f) + 1);
+
+            points.get(j).add(new Point(new PVector(x, y), rainbow[j], ceil(abs(sin(t)*4))));
+            if (t > 2 * PI) {
+                points.get(j).remove(0);
+            }
+
+            for (int i = 0; i < points.get(j).size() - 1; i++) {
+                strokeWeight(points.get(j).get(i).w);
+                stroke(points.get(j).get(i).col, 150);
+                line(points.get(j).get(i+1).pos.x, points.get(j).get(i+1).pos.y,
+                        points.get(j).get(i).pos.x, points.get(j).get(i).pos.y);
+            }
         }
         fill(200, (1-noise(t)*255), noise(t)*255);
         noStroke();
-
-        PVector lastPoint = points.get(points.size()-1);
+        PVector lastPoint = points.get(4).get(points.get(4).size()-1).pos;
         ellipse(lastPoint.x, lastPoint.y, 10, 10);
 
         PVector F1 = new PVector(a, 0);
@@ -84,13 +112,11 @@ public class MainApp extends PApplet{
         imgPos = lastPoint;
         pushMatrix();
         imageMode(CENTER);
-        //scale(-1, 1);
-        //translate(-width/2.0f, -height/2.0f);
         translate(imgPos.x, imgPos.y);
         float angle = 0;
-        if(points.size() >= 2){
-            angle = atan2(points.get(points.size()-1).y - points.get(points.size()-2).y,
-                    points.get(points.size()-1).x - points.get(points.size()-2).x);
+        if(points.get(4).size() >= 2){
+            angle = atan2(points.get(4).get(points.get(4).size()-1).pos.y - points.get(4).get(points.get(4).size()-2).pos.y,
+                    points.get(4).get(points.get(4).size()-1).pos.x - points.get(4).get(points.get(4).size()-2).pos.x);
         }
         rotate(angle);
         translate(-imgPos.x, -imgPos.y);

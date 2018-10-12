@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sound">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/Documents/JavaLibs/processing-3.3.6/sound/library/sound.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

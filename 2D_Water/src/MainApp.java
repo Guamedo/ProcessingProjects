@@ -47,7 +47,6 @@ public class MainApp extends PApplet{
         }
 
         if(mousePressed){
-
             int x = round(mouseX);
             int y = round(mouseY);
 
@@ -57,20 +56,13 @@ public class MainApp extends PApplet{
         }
     }
 
-    public void keyPressed(){
-        System.out.println(keyCode);
-        if(keyCode == 10){
-            noLoop();
-        }
-    }
-
     public void updateBuffers(){
         for(int i = 1; i < width-1; i++){
             for(int j = 1; j < height-1; j++){
                 buffer2[i][j] = (buffer1[i-1][j] +
                                     buffer1[i+1][j] +
                                     buffer1[i][j+1] +
-                                    buffer1[i][j-1]) / 2 - buffer2[i][j];
+                                    buffer1[i][j-1]) / 2.0f - buffer2[i][j];
                 buffer2[i][j] = buffer2[i][j]*damping;
             }
         }

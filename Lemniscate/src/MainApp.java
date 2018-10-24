@@ -2,6 +2,9 @@ import processing.core.PApplet;
 import processing.core.PVector;
 import processing.core.PImage;
 
+import ddf.minim.*;
+import ddf.minim.effects.*;
+
 import java.util.ArrayList;
 
 public class MainApp extends PApplet{
@@ -21,6 +24,9 @@ public class MainApp extends PApplet{
     private PVector imgPos = new PVector(0, 0);
     private int rainbow[];
 
+    private Minim minim;
+    private AudioPlayer groove;
+
     public static void main(String[] args){
         String[] appletArgs = new String[] { "MainApp" };
         PApplet.main(appletArgs);
@@ -31,6 +37,8 @@ public class MainApp extends PApplet{
     }
 
     public void setup(){
+        surface.setTitle("Nyan Lemniscate");
+
         background(51);
 
         rainbow = new int[colorNumber];
@@ -60,6 +68,11 @@ public class MainApp extends PApplet{
 
         // Apply the mask to the image
         img.mask(mask);
+
+        // Load and play the sound file
+        minim = new Minim(this);
+        groove = minim.loadFile("sound/NyanCat.mp3", 2048);
+        groove.loop();
     }
 
     public void draw(){
@@ -68,7 +81,7 @@ public class MainApp extends PApplet{
         translate(width/2.0f, height/2.0f);
 
 
-        float t = frameCount*0.01f;
+        float t = frameCount*0.02f;
 
         for(int j = 0; j < colorNumber; j++) {
 
@@ -83,7 +96,7 @@ public class MainApp extends PApplet{
 
             for (int i = 0; i < points.get(j).size() - 1; i++) {
                 strokeWeight(points.get(j).get(i).w);
-                stroke(points.get(j).get(i).col, 150);
+                stroke(points.get(j).get(i).col);
                 line(points.get(j).get(i+1).pos.x, points.get(j).get(i+1).pos.y,
                         points.get(j).get(i).pos.x, points.get(j).get(i).pos.y);
             }

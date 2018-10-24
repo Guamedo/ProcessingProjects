@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bf29840-e2f1-4d3c-96c5-a768dc4ffe94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/emptyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/emptyProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/out/production/emptyProject/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/out/production/emptyProject/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lemniscate/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lemniscate/src/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves/LissajousCurves.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/libraries/core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LissajousCurves3D/LissajousCurves.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,12 +50,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1282" />
+          <entry key="java" value="1394" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1282" />
+          <entry key="JAVA" value="1394" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open" />
@@ -83,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="36" column="68" lean-forward="true" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+            <state relative-caret-position="269">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="e#241#242#0" expanded="true" />
                 <element signature="e#271#272#0" expanded="true" />
@@ -193,18 +181,18 @@
       <option name="presentableId" value="Default" />
       <updated>1538921381275</updated>
       <workItem from="1538921382637" duration="352000" />
-      <workItem from="1540370396154" duration="4048000" />
+      <workItem from="1540370396154" duration="4587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4400000" />
+    <option name="totallyTimeSpent" value="4939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2122905" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2122905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -213,7 +201,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952693" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -243,8 +231,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="36" column="68" lean-forward="true" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+        <state relative-caret-position="269">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#241#242#0" expanded="true" />
             <element signature="e#271#272#0" expanded="true" />

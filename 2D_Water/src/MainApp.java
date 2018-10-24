@@ -45,6 +45,7 @@ public class MainApp extends PApplet{
                 buffer1[i][j] = tmp;
             }
         }
+
         if(mousePressed){
 
             int x = round(mouseX);
@@ -53,6 +54,13 @@ public class MainApp extends PApplet{
             if(x >= 0 && x < width && y >= 0 && y < height){
                 buffer1[y][x] = 255.0f;
             }
+        }
+    }
+
+    public void keyPressed(){
+        System.out.println(keyCode);
+        if(keyCode == 10){
+            noLoop();
         }
     }
 

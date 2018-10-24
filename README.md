@@ -19,3 +19,9 @@ This are projects made with the [Processing 3](https://processing.org/) library.
 <p align="center">
 <img src="Images/lissajous3D.jpg" width=500px style="text-align:center"></img>
 </p>
+
+## 2D Water simulation
+
+<p align="center">
+<img src="Images/2D_Water.png" width=500px style="text-align:center"></img>
+</p>

@@ -51,7 +51,7 @@ public class MainApp extends PApplet{
             int y = round(mouseY);
 
             if(x >= 0 && x < width && y >= 0 && y < height){
-                buffer1[y][x] = 255.0f;
+                buffer1[y][x] = 10.0f;
             }
         }
     }
